@@ -375,12 +375,12 @@
 			};
 
 
-			ldo25m {
+			ldo25m: ldo25m {
 				/* touch */
 				regulator-name = "dvdd_tsp";
 			};
 
-			ldo26m {
+			ldo26m: ldo26m {
 				/* touch */
 				regulator-name = "avdd_ts";
 			};
@@ -909,7 +909,7 @@
 		pinctrl-names = "ts_active";
 		pinctrl-0 = <&ts_irq &ts_reset &ap2aoc &aoc2ap_irq
 			     &spi11_bus &spi11_cs>;
-		vdd-supply = <&ldo25m>;
-		avdd-supply = <&ldo26m>;
+		vdd-supply = <&ldo_25m>;
+		avdd-supply = <&ldo_26m>;
 	};
 };
