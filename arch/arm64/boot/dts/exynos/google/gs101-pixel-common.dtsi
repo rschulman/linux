@@ -909,7 +909,7 @@
 		pinctrl-names = "ts_active";
 		pinctrl-0 = <&ts_irq &ts_reset &ap2aoc &aoc2ap_irq
 			     &spi11_bus &spi11_cs>;
-		vdd-supply = <&ldo_25m>;
-		avdd-supply = <&ldo_26m>;
+		vdd-supply = <&ldo25m>;
+		avdd-supply = <&ldo26m>;
 	};
 };
