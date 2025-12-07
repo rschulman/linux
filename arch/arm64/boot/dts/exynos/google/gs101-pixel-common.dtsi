@@ -911,5 +911,6 @@
 			     &spi11_bus &spi11_cs>;
 		vdd-supply = <&ldo25m>;
 		avdd-supply = <&ldo26m>;
+		fts,irq-gpio =  <&gpa9 0x0 0x0>;
 	};
 };
