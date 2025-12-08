@@ -936,6 +936,7 @@
 		pinctrl-1 = <&ts_spi_bus_sleep &ts_spi_miso_sleep &ts_spi_cs_sleep>;
 		vdd-supply = <&ldo25m>;
 		avdd-supply = <&ldo26m>;
-		fts,irq-gpio =  <&gpa9 0x0 0x0>;
+		fts,irq-gpio =  <&gpa9 0x00 0x00>;
+		fts,reset-gpio = <&gpp26 0x00 0x00>;
 	};
 };
