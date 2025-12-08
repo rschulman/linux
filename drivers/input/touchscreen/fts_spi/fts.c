@@ -3473,6 +3473,9 @@ static int fts_init(struct fts_ts_info *info)
 						  DUMMY_FIFO);
 			logError(1, "%s chip_id0:0x%x,chip_id1:0x%x\n", tag,
 				 readData[0], readData[1]);
+			if (error < 0) {
+				logError(1, "%s Error in write/read for chip id: %08X", tag, error);
+			}
 			if ((readData[0] == DCHIP_ID_0) &&
 			    (readData[1] == DCHIP_ID_1))
 				break;
