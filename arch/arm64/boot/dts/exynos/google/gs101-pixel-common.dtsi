@@ -938,5 +938,11 @@
 		avdd-supply = <&ldo26m>;
 		fts,irq-gpio =  <&gpa9 0x00 0x00>;
 		fts,reset-gpio = <&gpp26 0x00 0x00>;
+
+		controller-data {
+			samsung,spi-feedback-delay = <0x01>;
+			samsung,spi-chip-select-mode = <0x00>;
+			cs-clock-delay = <0x02>;
+		};
 	};
 };
